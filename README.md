@@ -7,14 +7,14 @@ pip install - r requirements.txt
 
 ## Workflow
 
-This is a binary classification problem with unbalanced dataset. We use F1-score to assess the performance of our approach. (Accuracy here is not a good metric since the dataset is unbalanced).
+This is a binary classification problem with unbalanced dataset. We use F1-score to assess the performance of our approach (Accuracy here is not a good metric since the dataset is unbalanced).
 
 Our methodology consists of:
 
 * Conducting preliminary analysis through 1-Preliminary.ipynb
 * Conducting exploratory analysis on 2-EDA.ipynb
 * Test simple models, for example on 4-XGBModel.ipynb
-* Automate the workflow with python scripts (run.sh script for example)
+* Automate the workflow with python scripts (we can then run everything through run.sh)
 
 As further work, we suggest performing more feature engineering to help increase the F1 score.
 ## Run directly
@@ -43,6 +43,8 @@ python3 train.py --model XGB --random_state 4
 ```
 python3 evaluate_on_future_validation.py
 ```
+
+We got approx. 0.6 F1-Score on test set.
 
 ### Generate submissions
 ```
