@@ -30,7 +30,7 @@ We split the dataset into two parts:
 1. The first part is used for hyperparameters search, where we will perform k-fold.
 2. The second part is used for future validation, to evaluate the model generalization ability.
 ```
-python3 preprocess_data.py
+python3 prepare_data.py
 python3 split_data.py --random_state 4
 ```
 
